@@ -6,5 +6,16 @@ Na pasta Selenium contém o arquio .jar que deve ser executado e os drivers rela
 
 ### Versões dos navegadores
 
-Chrome compativel a versão 88.
-Firefox compativel a versão 84
+- Chrome compativel a versão 88.
+- Firefox compativel a versão 84.
+
+### Variáveis de ambiente
+
+Backend
+
+- PORT: Porta em que será executado o backend;
+- MONGO_URL: URL para conexão com o mongo.
+
+Frontend
+
+- REACT_APP_API_URL: URL para requisições feitas a API.

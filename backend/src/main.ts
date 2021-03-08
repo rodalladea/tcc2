@@ -27,7 +27,7 @@ app.use((err: Error, request: Request, response: Response, _: NextFunction) => {
 });
 
 mongoose.connect(
-    'mongodb+srv://rodalladea:rBsC2YDvGNq3ynU@cluster0.amaro.mongodb.net/tcc2?authSource=admin&replicaSet=Cluster0-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true',
+    process.env.MONGO_URL || 'mongodb://localhost:27017/tcc',
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
