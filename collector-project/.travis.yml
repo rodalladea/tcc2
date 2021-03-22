@@ -1,0 +1,4 @@
+services:
+    - docker
+
+script: docker run --mount type=bind,source=$(pwd),target=/app,consistency=consistent watinha/collector mvn clean compile test
