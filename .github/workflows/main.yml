@@ -16,6 +16,17 @@ jobs:
     name: Setup, Build, Publish, and Deploy
     runs-on: ubuntu-latest
     steps:
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 14.x
+        
+    - name: Install dependencies
+      run: yarn install
+    
+    - name: Build
+      run: yarn build
 
     - name: Checkout
       uses: actions/checkout@v2
