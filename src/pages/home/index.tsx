@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from 'react';
 
 import {
-    Header, ProfileImage, Content, AllCards, DownloadButton,
+    Header, Content, AllCards, DownloadButton,
 } from './styles';
 
 import Input from '../../components/Input';
